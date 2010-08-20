@@ -1,5 +1,6 @@
 <classpath>
   <classpathentry kind="src" path="src/main/java"/>
+  <classpathentry kind="src" path="OSGI-INF" including="**" excluding="**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
   <classpathentry kind="lib" path="arq-2.8.2.jar"/>
   <classpathentry kind="lib" path="beansbinding-1.2.1.jar"/>

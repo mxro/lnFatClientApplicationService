@@ -3,7 +3,7 @@
 		<module.group>de.linnk.fatclient.service</module.group>    <!--  Maven groupId -->
 		<module.name>lnFatClientApplicationService</module.name>             <!--  Maven artifactId -->
 		<module.version>0.0.1-SNAPSHOT</module.version> <!--  Maven artifact version -->
-		<module.importedPackages>de.linnk.fatclient.application
+		<module.importedPackages>de.linnk.fatclient.application,de.mxro.applicationservice,*
 		</module.importedPackages>
 		<module.exportedContents>
 		</module.exportedContents>
