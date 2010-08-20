@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Embed-Directory: target/dependency
+Built-By: mx
+Build-Jdk: 1.6.0_20
+Bundle-Version: 0.0.1.SNAPSHOT
+Tool: Bnd-0.0.357
+Bundle-Name: lnFatClientApplicationService
+Bnd-LastModified: 1282276916570
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: lnFatClientApplicationService
+Import-Package: de.linnk.fatclient.application
+
