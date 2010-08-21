@@ -14,7 +14,7 @@
 		</module.exportedPackages>
 		<module.embeddedDependencies>
 		</module.embeddedDependencies>
-		<module.serviceDefinitions>
+		<module.serviceDefinitions>OSGI-INF/linnkfatclientapplicationservice.xml
 		</module.serviceDefinitions>
 	</properties>
   
