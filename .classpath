@@ -11,7 +11,7 @@
   <classpathentry kind="lib" path="iri-0.8.jar" sourcepath="/Users/mx/.m2/repository/com/hp/hpl/jena/iri/0.8/iri-0.8-sources.jar"/>
   <classpathentry kind="lib" path="javaws-1.0.jar"/>
   <classpathentry kind="lib" path="jena-2.6.2.jar"/>
-  <classpathentry kind="lib" path="jenabean-1.0.3.jar"/>
+  <classpathentry kind="lib" path="jenabean-1.0.6.jar"/>
   <classpathentry kind="lib" path="jmyspell-1.0.jar"/>
   <classpathentry kind="lib" path="jtidy-8.0.jar"/>
   <classpathentry kind="lib" path="junit-4.5.jar"/>
