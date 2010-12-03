@@ -61,11 +61,6 @@
 			<location>C:/Users/Max/.m2/repository/com/ibm/icu/icu4j/3.4.4/icu4j-3.4.4.jar</location>
 		</link>
 		<link>
-			<name>inclXStream-0.0.4-SNAPSHOT.jar</name>
-			<type>1</type>
-			<location>C:/Users/Max/.m2/repository/de/mxro/incl/xstream/inclXStream/0.0.4-SNAPSHOT/inclXStream-0.0.4-SNAPSHOT.jar</location>
-		</link>
-		<link>
 			<name>iri-0.8.jar</name>
 			<type>1</type>
 			<location>C:/Users/Max/.m2/repository/com/hp/hpl/jena/iri/0.8/iri-0.8.jar</location>

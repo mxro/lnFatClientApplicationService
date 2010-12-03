@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Linnk" uid="de.linnk.fatclient.service.LinnkEclipseApplication" version="0.9.8" useFeatures="false" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-consoleLog -console</programArgs>
+      <vmArgs>-Declipse.ignoreApp=true -Dosgi.noShutdown=true</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</linux>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</macos>
+      <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</solaris>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</windows>
+   </vm>
+
+
+   <plugins>
+      <plugin id="lnDomain"/>
+      <plugin id="lnFatClient"/>
+      <plugin id="lnFatClientApplicationService"/>
+      <plugin id="lnFatClientSwingGUIs"/>
+      <plugin id="mxApplicationService"/>
+      <plugin id="mxGWTUtils"/>
+      <plugin id="mxImage"/>
+      <plugin id="mxJMySpell"/>
+      <plugin id="mxJena"/>
+      <plugin id="mxShef"/>
+      <plugin id="mxSwing"/>
+      <plugin id="mxTransferable"/>
+      <plugin id="mxUtilities"/>
+      <plugin id="mxXml"/>
+      <plugin id="nxCore"/>
+      <plugin id="nxDomain"/>
+      <plugin id="nxSwing"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.hamcrest.core"/>
+      <plugin id="org.junit"/>
+      <plugin id="thrdDom4j"/>
+      <plugin id="thrdGuavaGwt"/>
+      <plugin id="thrdHamcrestGWT"/>
+      <plugin id="thrdJTidy"/>
+      <plugin id="thrdJenaBean"/>
+      <plugin id="thrdShef"/>
+      <plugin id="thrdSwingActionManager"/>
+      <plugin id="thrdSwingApplicationFramework"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="lnFatClientApplicationService" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="0" />
+   </configurations>
+
+</product>

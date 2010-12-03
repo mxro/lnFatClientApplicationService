@@ -7,9 +7,9 @@ Bundle-Name: lnFatClientApplicationService
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_22
 Bundle-Version: 0.0.1.SNAPSHOT
-Bnd-LastModified: 1287796733799
+Bnd-LastModified: 1291341094940
 Bundle-ManifestVersion: 2
 Import-Package: de.linnk.fatclient.application,de.mxro.applicationserv
- ice
+ ice,org.eclipse.equinox.app;version="1.0"
 Bundle-SymbolicName: lnFatClientApplicationService
 
