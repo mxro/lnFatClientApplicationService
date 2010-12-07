@@ -33,11 +33,9 @@
   	</dependency>
   	
   	<dependency>
-  	
     <groupId>org.eclipse.equinox</groupId>
     <artifactId>app</artifactId>
     <version>1.0.0-v20070606</version>
-  	
   	</dependency>
   	
 	</dependencies>

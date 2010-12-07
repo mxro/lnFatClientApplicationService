@@ -6,7 +6,6 @@ public class LinnkEclipseApplication implements org.eclipse.equinox.app.IApplica
 
 	@Override
 	public Object start(IApplicationContext context) throws Exception {
-		
 		return null;
 	}
 
