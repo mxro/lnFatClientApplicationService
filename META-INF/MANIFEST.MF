@@ -1,13 +1,13 @@
 Manifest-Version: 1.0
 Service-Component: OSGI-INF/linnkfatclientapplicationservice.xml
 Embed-Directory: target/dependency
-Built-By: Max
+Built-By: mroh004
 Tool: Bnd-0.0.357
 Bundle-Name: lnFatClientApplicationService
 Created-By: Apache Maven Bundle Plugin
-Build-Jdk: 1.6.0_22
+Build-Jdk: 1.6.0_27
 Bundle-Version: 0.0.1.SNAPSHOT
-Bnd-LastModified: 1291341094940
+Bnd-LastModified: 1316056421670
 Bundle-ManifestVersion: 2
 Import-Package: de.linnk.fatclient.application,de.mxro.applicationserv
  ice,org.eclipse.equinox.app;version="1.0"
