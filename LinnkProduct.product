@@ -3,7 +3,6 @@
 
 <product name="Linnk" uid="de.linnk.fatclient.service.LinnkEclipseApplication" id="lnFatClientApplicationService.Linnk" application="lnFatClientApplicationService.LinnkEclipseApplication" version="0.9.9" useFeatures="false" includeLaunchers="true">
 
-
    <configIni use="default">
    </configIni>
 
@@ -14,7 +13,6 @@
 
    <windowImages/>
 
-
    <launcher name="Linnk">
       <solaris/>
       <win useIco="false">
@@ -22,14 +20,12 @@
       </win>
    </launcher>
 
-
    <vm>
       <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</linux>
       <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</macos>
       <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</solaris>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</windows>
    </vm>
-
 
    <plugins>
       <plugin id="lnDomain"/>
@@ -74,8 +70,44 @@
    </plugins>
 
    <configurations>
+      <plugin id="lnDomain" autoStart="true" startLevel="0" />
+      <plugin id="lnFatClient" autoStart="true" startLevel="0" />
       <plugin id="lnFatClientApplicationService" autoStart="true" startLevel="0" />
+      <plugin id="lnFatClientSwingGUIs" autoStart="true" startLevel="0" />
+      <plugin id="mxApplicationService" autoStart="true" startLevel="0" />
+      <plugin id="mxConsole" autoStart="true" startLevel="0" />
+      <plugin id="mxGWTUtils" autoStart="true" startLevel="0" />
+      <plugin id="mxImage" autoStart="true" startLevel="0" />
+      <plugin id="mxJMySpell" autoStart="true" startLevel="0" />
+      <plugin id="mxJena" autoStart="true" startLevel="0" />
+      <plugin id="mxShef" autoStart="true" startLevel="0" />
+      <plugin id="mxSwing" autoStart="true" startLevel="0" />
+      <plugin id="mxTransferable" autoStart="true" startLevel="0" />
+      <plugin id="mxUtilities" autoStart="true" startLevel="0" />
+      <plugin id="mxXml" autoStart="true" startLevel="0" />
+      <plugin id="nxCore" autoStart="true" startLevel="0" />
+      <plugin id="nxDomain" autoStart="true" startLevel="0" />
+      <plugin id="nxSwing" autoStart="true" startLevel="0" />
+      <plugin id="org.apache.ant" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.registry" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.util" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.osgi.services" autoStart="true" startLevel="0" />
+      <plugin id="org.hamcrest.core" autoStart="true" startLevel="0" />
+      <plugin id="org.junit" autoStart="true" startLevel="0" />
+      <plugin id="thrdDom4j" autoStart="true" startLevel="0" />
+      <plugin id="thrdGuavaGwt" autoStart="true" startLevel="0" />
+      <plugin id="thrdHamcrest" autoStart="true" startLevel="0" />
+      <plugin id="thrdHamcrestGWT" autoStart="true" startLevel="0" />
+      <plugin id="thrdJTidy" autoStart="true" startLevel="0" />
+      <plugin id="thrdJenaBean" autoStart="true" startLevel="0" />
+      <plugin id="thrdNovaworxSyntax" autoStart="true" startLevel="0" />
+      <plugin id="thrdShef" autoStart="true" startLevel="0" />
+      <plugin id="thrdSwingActionManager" autoStart="true" startLevel="0" />
+      <plugin id="thrdSwingApplicationFramework" autoStart="true" startLevel="0" />
    </configurations>
 
 </product>
