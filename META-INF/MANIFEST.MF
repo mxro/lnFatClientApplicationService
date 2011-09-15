@@ -11,5 +11,5 @@ Bnd-LastModified: 1316056421670
 Bundle-ManifestVersion: 2
 Import-Package: de.linnk.fatclient.application,de.mxro.applicationserv
  ice,org.eclipse.equinox.app;version="1.0"
-Bundle-SymbolicName: lnFatClientApplicationService
+Bundle-SymbolicName: lnFatClientApplicationService;singleton:=true
 

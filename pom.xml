@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project>
-  <properties>
-		<module.group>de.linnk.fatclient.service</module.group>    <!--  Maven groupId -->
-		<module.name>lnFatClientApplicationService</module.name>             <!--  Maven artifactId -->
-		<module.version>0.0.1-SNAPSHOT</module.version> <!--  Maven artifact version -->
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<properties>
+		<module.group>de.linnk.fatclient.service</module.group>    <!-- Maven groupId -->
+		<module.name>lnFatClientApplicationService</module.name>             <!-- Maven artifactId -->
+		<module.version>0.0.1-SNAPSHOT</module.version> <!-- Maven artifact version -->
 		<module.importedPackages>de.linnk.fatclient.application,de.mxro.applicationservice,*
 		</module.importedPackages>
 		<module.exportedContents>
 		</module.exportedContents>
-		<!--
-			exported packages from embedded dependencies
-		-->
+		<!-- exported packages from embedded dependencies -->
 		<module.exportedPackages>
 		</module.exportedPackages>
 		<module.embeddedDependencies>
@@ -17,39 +16,45 @@
 		<module.serviceDefinitions>OSGI-INF/linnkfatclientapplicationservice.xml
 		</module.serviceDefinitions>
 	</properties>
-  
-  <!-- DEPENDENCIES -->
+
+	<!-- DEPENDENCIES -->
 	<dependencies>
-	<dependency>
-    <groupId>de.linnk.fatclient</groupId>
-    <artifactId>lnFatClient</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-</dependency>
-<dependency>
-  		<groupId>de.mxro.applicationservice</groupId>
-  		<artifactId>mxApplicationService</artifactId>
-  		<version>[0.0.1,)</version>
-  		<optional>false</optional>
-  	</dependency>
-  	
-  	<dependency>
-    <groupId>org.eclipse.equinox</groupId>
-    <artifactId>app</artifactId>
-    <version>1.0.0-v20070606</version>
-  	</dependency>
-  	
+		<dependency>
+			<groupId>de.mxro.thrd.hamcrest</groupId>
+			<artifactId>thrdHamcrest</artifactId>
+			<version>[0.0.1,)</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.linnk.fatclient</groupId>
+			<artifactId>lnFatClient</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>de.mxro.applicationservice</groupId>
+			<artifactId>mxApplicationService</artifactId>
+			<version>[0.0.1,)</version>
+			<optional>false</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>app</artifactId>
+			<version>1.0.0-v20070606</version>
+		</dependency>
+
 	</dependencies>
-	
-	
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>${module.group}</groupId>
+
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>${module.group}</groupId>
 	<artifactId>${module.name}</artifactId>
 	<version>${module.version}</version>
 	<name>${module.name}</name>
 	<packaging>bundle</packaging>
-	
-	
-  <build>
+
+
+	<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -59,7 +64,7 @@
 				</configuration>
 			</plugin>
 			<!-- FOR BUNDLE MANAGEMENT -->
-			<!--  The Maven bundle plugin generates Meta-data required for OSGi  -->
+			<!-- The Maven bundle plugin generates Meta-data required for OSGi -->
 
 			<plugin>
 				<groupId>org.apache.felix</groupId>
@@ -84,11 +89,9 @@
 
 
 			<!-- FOR MAVEN ECLIPSE PLUGIN -->
-			<!--
-				Dependency Plugin used to copy the dependency JARs into the root
-				project folder. There the Maven eclipse plugin will add them to the
-				classpath of PDE projects.
-			-->
+			<!-- Dependency Plugin used to copy the dependency JARs into the root 
+				project folder. There the Maven eclipse plugin will add them to the classpath 
+				of PDE projects. -->
 			<plugin>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
@@ -108,9 +111,7 @@
 				</executions>
 			</plugin>
 
-			<!--
-				Cleanup necessary because of PDE tweaks, clear the project directory
-			-->
+			<!-- Cleanup necessary because of PDE tweaks, clear the project directory -->
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>2.3</version>
@@ -127,10 +128,8 @@
 				</configuration>
 			</plugin>
 
-			<!--
-				Keep the MANIFEST.MF used by eclipse in sync with the MANIFEST.MF
-				created by the maven bundle plugin
-			-->
+			<!-- Keep the MANIFEST.MF used by eclipse in sync with the MANIFEST.MF 
+				created by the maven bundle plugin -->
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
@@ -155,14 +154,11 @@
 
 		<!-- RESOURCES -->
 		<resources>
-			<!--
-				This entry makes sure that resources, which lie in the same package
-				as Java classes, are copied into the target. Often external
-				libraries require resources, which are loaded using
-				Class.getResource or Class.getResourceAsStream and which are in a
-				subpackage of the class. For instance, the NetBeans template for the
-				Swing Application Framework does so.
-			-->
+			<!-- This entry makes sure that resources, which lie in the same package 
+				as Java classes, are copied into the target. Often external libraries require 
+				resources, which are loaded using Class.getResource or Class.getResourceAsStream 
+				and which are in a subpackage of the class. For instance, the NetBeans template 
+				for the Swing Application Framework does so. -->
 			<resource>
 				<filtering>false</filtering>
 				<directory>src/main/java</directory>
@@ -173,10 +169,8 @@
 					<exclude>**/*.java</exclude>
 				</excludes>
 			</resource>
-			<!--
-				This entry makes sure component definitions for OSGi declarative
-				services are copied into the destination
-			-->
+			<!-- This entry makes sure component definitions for OSGi declarative 
+				services are copied into the destination -->
 			<resource>
 				<targetPath>OSGI-INF</targetPath>
 				<filtering>false</filtering>
@@ -185,10 +179,8 @@
 					<include>**</include>
 				</includes>
 			</resource>
-			<!--
-				I really do not know why know a manual entry for src/main/resources
-				is necessary? It should be included following the Maven convention.
-			-->
+			<!-- I really do not know why know a manual entry for src/main/resources 
+				is necessary? It should be included following the Maven convention. -->
 			<resource>
 				<filtering>false</filtering>
 				<directory>src/main/resources</directory>
@@ -201,18 +193,20 @@
 
 
 	</build>
-	
+
 	<!-- DISTRIBUTION MANAGEMENT -->
 	<distributionManagement>
-        <repository>
-            <id>releases</id>
-            <name>Internal Releases</name>
-            <url>http://internal1.nxweb.de:8080/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Internal Snapshots</name>
-            <url>http://internal1.nxweb.de:8080/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Internal Releases</name>
+			<url>http://internal1.nxweb.de:8080/nexus/content/repositories/releases
+			</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>http://internal1.nxweb.de:8080/nexus/content/repositories/snapshots
+			</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

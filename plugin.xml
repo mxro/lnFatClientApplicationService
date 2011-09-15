@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="LinnkEclipseApplication"
+         name="LinnkEclipseApplication"
+         point="org.eclipse.core.runtime.applications">
+      <Generic></Generic>
+   </extension>
+   <extension
+         id="Linnk"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="lnFatClientApplicationService.LinnkEclipseApplication"
+            name="Linnk">
+         <property
+               name="appName"
+               value="Linnk">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
