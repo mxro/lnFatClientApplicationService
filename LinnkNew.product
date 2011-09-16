@@ -74,6 +74,7 @@
    </plugins>
 
    <configurations>
+      <plugin id="javax.xml" autoStart="true" startLevel="0" />
       <plugin id="lnDomain" autoStart="true" startLevel="0" />
       <plugin id="lnFatClient" autoStart="true" startLevel="0" />
       <plugin id="lnFatClientApplicationService" autoStart="true" startLevel="0" />
