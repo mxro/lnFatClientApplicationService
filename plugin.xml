@@ -2,18 +2,19 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         id="LinnkApplication"
-         name="Linnk Application"
+         id="application"
          point="org.eclipse.core.runtime.applications">
-      <Generic>
-         Linnk Descrption
-      </Generic>
+      <application>
+         <run
+               class="de.linnk.fatclient.service.LinnkEclipseApplication">
+         </run>
+      </application>
    </extension>
    <extension
-         id="Linnk"
+         id="LinnkNew"
          point="org.eclipse.core.runtime.products">
       <product
-            application="lnFatClientApplicationService.LinnkApplication"
+            application="lnFatClientApplicationService.application"
             name="Linnk Name">
          <property
                name="appName"
